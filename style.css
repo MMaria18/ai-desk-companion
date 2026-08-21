@@ -191,6 +191,12 @@ h2 {
   line-height: 1.5;
   margin: 0 0 16px;
 }
+.commands-intro{
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
 
 .console-button {
   display: flex;
