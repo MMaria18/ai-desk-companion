@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Desk Companion — Project Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sheet">
+
+  <header class="sheet-header">
+  
+    <h1>AI Desk Companion</h1>
+    <p class="tagline">An intelligent voice-interactive embedded system designed for seamless human–machine communication.</p>
+    <div class="status">
+      <span class="status-dot"></span>
+      <span class="status-text">Firmware: Xiaozhi · Server: xiaozhi.me</span>
+    </div>
+  </header>
+
+  <section class="specs">
+    <h2>Bill of Materials</h2>
+    <div class="spec-grid">
+      <div class="spec-row">
+        <span class="spec-label">MCU</span>
+        <span class="spec-value">ESP32-S3 Zero</span>
+        <span class="spec-note">Dual-core, Wi-Fi, USB-C</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">MIC</span>
+        <span class="spec-value">INMP441</span>
+        <span class="spec-note">I2S digital, GPIO4/5/6</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">AMP</span>
+        <span class="spec-value">MAX98357A</span>
+        <span class="spec-note">I2S Class-D, GPIO7/8/9</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">DISP</span>
+        <span class="spec-value">0.96" OLED</span>
+        <span class="spec-note">SSD1306, I2C, GPIO10/11</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="capabilities">
+    <h2>Device Capabilities</h2>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-icon">🎙</div>
+        <div class="cap-title">Voice Conversation</div>
+        <div class="cap-desc">Real-time speech interaction using the INMP441 microphone</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">🌐</div>
+        <div class="cap-title">Multilingual AI</div>
+        <div class="cap-desc">Ask questions, translate, summarize, and chat naturally</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">📶</div>
+        <div class="cap-title">Wi-Fi Connected</div>
+        <div class="cap-desc">Automatically reconnects to the configured network</div>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon">🕐</div>
+        <div class="cap-title">Standby Mode</div>
+        <div class="cap-desc">Shows the clock when idle, wakes with the BOOT button</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="commands">
+    <h2>Voice Commands</h2>
+    <ul class="command-list">
+      <li><span class="command-phrase">"What's the weather today?"</span><span class="command-desc">Live weather lookup</span></li>
+      <li><span class="command-phrase">"Set the volume to 100%"</span><span class="command-desc">Real-time translation</span></li>
+      <li><span class="command-phrase">"Summarize this for me"</span><span class="command-desc">Condenses long input</span></li>
+      <li><span class="command-phrase">"Play a music"</span><span class="command-desc">Simple task handling</span></li>
+      <li><span class="command-phrase">"Tell me a joke"</span><span class="command-desc">Casual conversation</span></li>
+    </ul>
+  </section>
+
+  <section class="console-link">
+    <h2>Agent Console</h2>
+    <p class="console-desc">Live configuration for role, voice, and behavior — hosted on Xiaozhi's server.</p>
+    <a href="https://xiaozhi.me/console/agents/2208915/config" target="_blank" class="console-button">
+      <span class="console-button-label">Open Agent Console</span>
+      <span class="console-button-arrow">→</span>
+    </a>
+  </section>
+
+  <div class="qr">
+    <h2>Mobile Access</h2>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=YOUR_GITHUB_PAGES_URL_HERE" alt="QR code linking to this dashboard">
+    <p>Scan to open this dashboard on your phone.</p>
+  </div>
+
+  <footer class="sheet-footer">
+    Built on the open-source <a href="https://github.com/78/xiaozhi-esp32" target="_blank">xiaozhi-esp32</a> firmware
+  </footer>
+
+</div>
+
+</body>
+</html>
